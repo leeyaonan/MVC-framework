@@ -4,12 +4,12 @@ import java.lang.annotation.*;
 
 /**
  * @Author leeyaonan
- * @Date 2020/4/25 13:59
+ * @Date 2020/4/25 14:08
  */
 @Documented
-@Target({ElementType.TYPE})
+@Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyController {
+public @interface MyRequestMapping {
 
     String value() default "";
 }
