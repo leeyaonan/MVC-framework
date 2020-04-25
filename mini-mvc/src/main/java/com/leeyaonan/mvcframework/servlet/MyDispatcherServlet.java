@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 /**
  * @Author leeyaonan
@@ -13,6 +15,7 @@ import java.io.IOException;
  */
 public class MyDispatcherServlet extends HttpServlet {
 
+    private Properties properties = new Properties();
 
     @Override
     public void init(ServletConfig config) throws ServletException {
@@ -74,6 +77,14 @@ public class MyDispatcherServlet extends HttpServlet {
      * @param contextConfigLocation
      */
     private void doLoadConfig(String contextConfigLocation) {
+        // 传入的是一个路径，需要将其读取成流
+        InputStream resourceAsStream = this.getClass().getClassLoader().getResourceAsStream(contextConfigLocation);
+
+        try {
+            properties.load(resourceAsStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
