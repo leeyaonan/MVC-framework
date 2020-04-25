@@ -8,15 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c128e4b-1497-42fc-97ae-eccc26080494" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/annotations/MyAutowired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/annotations/MyRequestMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/annotations/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-mvc/src/main/resources/springmvc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/annotations/MyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/annotations/MyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/servlet/MyDispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mini-mvc/src/main/java/com/leeyaonan/mvcframework/servlet/MyDispatcherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mini-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +252,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587308673248</updated>
-      <workItem from="1587308677633" duration="25163000" />
+      <workItem from="1587308677633" duration="27437000" />
     </task>
     <servers />
   </component>
