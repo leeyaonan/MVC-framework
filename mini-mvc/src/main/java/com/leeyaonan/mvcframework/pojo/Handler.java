@@ -11,13 +11,13 @@ import java.util.regex.Pattern;
  */
 public class Handler {
 
-    private Object controller;
+    private Object controller;  // method.invoke(obj, )
 
     private Method method;
 
-    private Pattern pattern;
+    private Pattern pattern;    // spring中url支持正则
 
-    private Map<String, Integer> paramIndexMapping;
+    private Map<String, Integer> paramIndexMapping;     // 参数顺序，为了进行参数绑定，key是参数名， value代表是第几个参数
 
     public Handler(Object controller, Method method, Pattern pattern) {
         this.controller = controller;

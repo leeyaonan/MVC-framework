@@ -28,6 +28,7 @@
         </dependency>
 
 
+        <!--provided，即部署到服务器后，使用服务器的servlet-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -46,6 +47,20 @@
         <finalName>mini-mvc</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-complier-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>11</source>
+                        <target>11</target>
+                        <encoding>utf-8</encoding>
+                        <!--告诉编译器，编译的时候记录下形参的真实名称-->
+                        <complierArgs>
+                            <arg>-parameters</arg>
+                        </complierArgs>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat7-maven-plugin</artifactId>
